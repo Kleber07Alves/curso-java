@@ -15,16 +15,16 @@ public class Pensionato {
 
 		
 		String [] email = new String [quantQuartos];
-		String [] nomeEstudante = new String [quantQuartos];
+		String [] nameEstudante = new String [quantQuartos];
 		int j = 0; // j é o quarto 
 		for(int i = 0; i < n; i++) {
 			System.out.println("Digite qual o numero do quarto vai alugar \n Quartos disponiveis de 0 a 9:");
 			
 			j = scanner.nextInt();
 			
-			if(nomeEstudante[j] == null) {
-				System.out.println("Nome do studante:");
-				nomeEstudante[j] = scanner.next();
+			if(nameEstudante[j] == null) {
+				System.out.println("name do studante:");
+				nameEstudante[j] = scanner.next();
 				System.out.println("E-mail:");
 				email[j] = scanner.next();	
 			}
@@ -34,8 +34,8 @@ public class Pensionato {
 		}
 			
 		for(int i = 0; i < quantQuartos; i++) {
-			if(nomeEstudante[i] != null) {
-				System.out.println("quartos alugados: \n" + " [" + i + "] = " + nomeEstudante [i] + ", "+ email [i]);				
+			if(nameEstudante[i] != null) {
+				System.out.println("quartos alugados: \n" + " [" + i + "] = " + nameEstudante [i] + ", "+ email [i]);				
 			}			
 		}
 			

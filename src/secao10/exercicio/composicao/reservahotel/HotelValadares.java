@@ -37,6 +37,7 @@ public class HotelValadares {
 		
 		
 		//System.out.println(guest);
+		scanner.close();
 
 	}
 
